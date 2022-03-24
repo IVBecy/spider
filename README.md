@@ -27,7 +27,7 @@ Spider will only copy folders that are less than 250 MB
 # Setup
 To setup the whole project, just run `setup.sh`. Keep in mind that you will have to interact with it.  
 Make sure that when installing `git bash` install it to the root directory of the USB drive.  
-That will look like: `E:\Git`  
+That will look like: `D:\Git`  
 It will also compile the `run` file.  
 Knock yourself out!  
 ## Notes:
@@ -39,5 +39,5 @@ Run `run.exe` to start the program.
 
 # Troubleshoot:
 - ## Case 1:
-  - If you have a different drive letter. It is `E` by default.  
+  - If you have a different drive letter. It is `D` by default.  
   Look for the `DRIVE_LETTER` variable in `spider.sh` and change the letter in `lib/run.c` and recompile.
