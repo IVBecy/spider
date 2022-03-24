@@ -14,6 +14,7 @@ My first actual project in Bash, so there's space for improvement.
 - ## Windows:
   - Environment variables
   - Wi-fi password
+  - Listening ports (netstat)
   - Home : `"Downloads", "Pictures", "Desktop", ".ssh"`
 
 # Map of DIR structure:
