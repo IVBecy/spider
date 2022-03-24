@@ -42,6 +42,8 @@ EOF
   printenv > "$SYSTEMINF"\\.env
   echo "Listening ports ${LB}"
   netstat -aon | grep "LISTENING" > "$SYSTEMINF"\\.netstat_listen
+  echo "Getting public IP ${LB}"
+  curl https://icanhazip.com -o $SYSTEMINF/.public_ip &>/dev/null
   wifi_pass
   get_basic_files
 }
